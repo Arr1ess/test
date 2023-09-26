@@ -1,0 +1,6 @@
+*{
+    padding: 5px;
+}
+header, main, body, html{
+    padding: 0;
+}
