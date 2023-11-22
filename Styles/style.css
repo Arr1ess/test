@@ -1,0 +1,38 @@
+.main-container {
+  padding: 20px;
+}
+.main-container .form {
+  margin-bottom: 20px;
+}
+.main-container .form__textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+}
+.main-container .form__submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8ac926;
+  color: white;
+  cursor: pointer;
+}
+.main-container .processed-text {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+.main-container .processed-text > .processed-text {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #f4f4f4;
+  border-radius: 5px;
+}
+.main-container .processed-text .highlight {
+  background-color: #ffdc00;
+}/*# sourceMappingURL=style.css.map */

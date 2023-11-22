@@ -1,21 +1,19 @@
-
-
 <?php include '../defolt/header.php'; ?>
 
-
-
 <main class="auth">
-	<form class="auth__form auth__form--login" style="background-color: #e6e6e6; padding: 20px; margin: 20px;">
-		<input type="text" class="auth__input form-control" id="email" placeholder="Email or Username"
-			style="margin-bottom: 10px;">
-		<input type="password" class="auth__input form-control" id="password" placeholder="Password"
-			style="margin-bottom: 10px;">
-		<button class="auth__guest-button" style="margin-bottom: 10px;">Continue as Guest</button>
-		<a href="registration.php" class="btn btn-secondary" style="margin-top: 10px;">Create an account</a>
-	</form>
+    <form class="auth__form auth__form--login" method="post" action="process_login.php">
+        <?php if (isset($_GET['error'])){
+					echo "<div class='error'>" .  urldecode($_GET['error']) .  "</div>";
+				}
+        ?>
+        <input type="text" class="auth__input form-control" name="email" id="email" placeholder="Email or Username" />
+        <input type="password" class="auth__input form-control" name="password" id="password" placeholder="Password" />
+        <button class="auth__guest-button" type="submit" name="guest">
+            Continue as Guest
+        </button>
+        <button class="auth__submit-button" type="submit">Login</button>
+        <a href="registration.php" class="auth__link">Create an account</a>
+    </form>
 </main>
-
-
-
 
 <?php include '../defolt/footer.php'; ?>

@@ -1,0 +1,51 @@
+$light-gray: #f4f4f4;
+$light-green: #8ac926;
+$light-yellow: #ffdc00;
+
+// Стили для основного контейнера
+.main-container {
+  padding: 20px;
+
+  // Стили для формы
+  .form {
+    margin-bottom: 20px;
+
+    &__textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid $light-gray;
+      border-radius: 5px;
+    }
+  
+    &__submit {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: $light-green;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  // Стили для обработанных блоков
+  .processed-text {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    background-color: $light-gray;
+
+    // Вложенные блоки
+    & > .processed-text {
+      margin-top: 10px;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid $light-gray;
+      border-radius: 5px;
+    }
+		& .highlight{
+			background-color: #ffdc00;
+		}
+  }
+}

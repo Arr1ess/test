@@ -1,0 +1,40 @@
+.main-container {
+	padding: 20px;
+
+	.form {
+		margin-bottom: 20px;
+
+		&__textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid $light-gray;
+			border-radius: 5px;
+		}
+
+		&__submit {
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			background-color: $light-green;
+			color: white;
+			cursor: pointer;
+		}
+	}
+
+	.processed-text {
+		padding: 10px;
+		margin-bottom: 10px;
+		border: 1px solid $light-gray;
+		border-radius: 5px;
+		background-color: $light-gray;
+
+		& > .processed-text {
+			margin-top: 10px;
+			background-color: white;
+			padding: 10px;
+			border: 1px solid $light-gray;
+			border-radius: 5px;
+		}
+	}
+}
